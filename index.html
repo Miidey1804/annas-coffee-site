@@ -1,0 +1,104 @@
+<!-- Header with Mobile Navigation -->
+<header>
+  <div class="logo">
+    <h1>Anna’s Coffee</h1>
+  </div>
+
+  <!-- Desktop Navigation -->
+<ul class="nav-links">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Shop</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+
+  <!-- Mobile Menu Toggle -->
+  <div class="mobile-menu-toggle" id="mobileMenuToggle">
+    &#9776;
+  </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<nav class="mobile-nav" id="mobileNav">
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Our Story Section -->
+<section class="our-story">
+  <div class="container">
+    <h2>Our Story</h2>
+    <p class="intro">Rooted in legacy. Roasted with love.</p>
+    <div class="story-content">
+      <div class="story-text">
+        <p>
+          At Anna’s Coffee, our journey begins where the story of coffee itself began—in the lush, misty highlands of 
+          <strong>Kaffa, southwestern Ethiopia</strong>, the ancestral home of <em>Coffea arabica</em>. This sacred origin inspires 
+          everything we do, from how we source our beans to how we serve our community.
+        </p>
+        <p>
+          We proudly source our flagship beans from these ancient forests—where coffee still grows wild. Our farmers, using traditional 
+          methods passed down through generations, cultivate beans with rich, complex character.
+        </p>
+        <p>
+          From bean to cup, we embrace sustainability, fair trade, and artisan roasting. Anna’s Coffee isn’t just a drink—it’s a tribute 
+          to heritage, craftsmanship, and conscious living.
+        </p>
+        <p><em>More than coffee—it's a cultural legacy in every cup.</em></p>
+      </div>
+      <div class="story-image">
+        <img src="assets/images/kaffa-forest.jpg" alt="Kaffa Coffee Forest">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Showcase Section -->
+<section class="product-showcase">
+  <div class="container">
+    <h2>Featured Coffee</h2>
+    <div class="product-grid">
+
+      <!-- Product Item 1 -->
+      <div class="product-item">
+        <img src="assets/images/kaffa-signature.jpg" alt="Kaffa Signature Roast">
+        <h3>Kaffa Signature Roast</h3>
+        <p>
+          Experience the bold flavors of our exclusive Kaffa roast, sourced directly from the ancestral coffee region in Ethiopia.
+        </p>
+        <p class="price"><strong>$18.00</strong></p>
+        <a href="https://annascoffee.com/shop/kaffa-signature" class="btn">Buy Now</a>
+      </div>
+
+      <!-- Product Item 2 -->
+      <div class="product-item">
+        <img src="assets/images/single-origin.jpg" alt="Single Origin Coffee">
+        <h3>Single Origin Coffee</h3>
+        <p>
+          Savor the unique taste of hand-picked, single-origin beans that capture the essence of tradition.
+        </p>
+        <p class="price"><strong>$20.00</strong></p>
+        <a href="https://annascoffee.com/shop/single-origin" class="btn">Buy Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  const toggle = document.getElementById("mobileMenuToggle");
+  const mobileNav = document.getElementById("mobileNav");
+
+  toggle.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
